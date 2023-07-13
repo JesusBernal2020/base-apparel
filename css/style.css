@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    background: url(/images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.logo__container{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.form_content{
+    padding-left: 12rem
+}
+
+.title__contianer{
+    padding-top: 4rem;
+    width: 300px;
+}
+
+.title__contianer h1{
+    font-size: 5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.text__color{
+    font-weight: 200;
+    color: #CE9898;
+}
+
+.text__container{
+    width: 360px;
+    padding-bottom: 1rem;
+}
+
+.text__container p{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #CE9898;
+    margin-bottom: 1rem;
+}
+
+.continer__btn{
+    display: flex;
+    position: relative;
+}
+
+.continer__btn input{
+    width: 350px;
+    height: 40px;
+    border: 2px solid #CE9898;
+    border-radius: 20px;
+    outline: none;
+    padding: 0.8rem;
+}
+
+input::placeholder {
+    color: #CE9898;
+}
+
+.continer__btn button{
+        background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+        padding: 0.3rem 0.9rem;
+        color: #fff;
+        border: 1px solid #F8BFBF;
+        border-radius: 20px;
+        position: absolute;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+}
+
+.continer__btn i{
+    font-size: 30px;
+}
+
+.continer__btn button:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, #edc0c0 0%, #e6afaf 100%);
+
+}
+
+#icon{
+    display: none;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 4rem;
+}
+
+#error__msg {
+    display: none;
+    color: #d61515;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.img__box{
+    background-image: url(/images/hero-desktop.jpg);
+    height: 100vh;
+    width: 450px;
+    background-size: cover;
+}
+
+
+@media (max-width:1024px ) {
+    .form_content {
+            padding-left: 5rem
+        }
+}
+
+@media (max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+        .logo__container{
+            padding: 2rem;
+        }
+    .img__container{
+        background: url(/images/hero-mobile.jpg);
+        background-size: cover;
+        height: 290px;
+    }
+    .form_content{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+         align-items: center;
+         padding-bottom: 3rem;
+    }
+    .img__box{
+        display: none;
+    }
+        .continer__btn button{
+            right: 0.3rem;
+        }
+        #icon {
+            display: none;
+            position: absolute;
+            bottom: 0.3rem;
+            right: 5rem;
+        }
+
+}
+
+@media (max-width:475px){
+    .form_content{
+        padding-left: 2rem;
+    }
+    .title__contianer h1{
+        font-size: 3rem;
+    }
+    .text__container{
+        width: 300px;
+    }
+    .continer__btn input{
+        width: 280px;
+    }
+    .continer__btn button{
+        right: 0.3rem;
+    }
+    #icon {
+        display: none;
+        position: absolute;
+        bottom: 0.3rem;
+        right: 4.5rem;
+    }
+}
+
+@media (max-width:320px){
+    .logo__container{
+        padding: 1rem;
+    }
+    .form_content{
+        padding-left: 1rem;
+    }
+    .title__contianer h1{
+        font-size: 2.5rem;
+    }
+    .text__container{
+        width: 250px;
+    }
+    .continer__btn input{
+        width: 250px;
+    }
+    .continer__btn button{
+        right: 1.5rem;
+    }
+    #icon {
+        display: none;
+        position: absolute;
+        bottom: 0.3rem;
+        right: 5.5rem;
+    }
+}
